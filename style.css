@@ -247,3 +247,23 @@
 .ace-doku-dark .ace_externallink {
     color: #8ff;
 }
+
+/* IOC */
+
+.ace-doku-light .ace_iocstl,
+.ace-doku-light .ace_quiz,
+.ace-doku-light .ace_latex,
+.ace-doku-light .ace_latexalt,
+.ace-doku-light .ace_noprint,
+.ace-doku-light .ace_noweb,
+.ace-doku-light .ace_directive {
+    color: #080;
+}
+
+.ace-doku-dark .ace_iocstl,
+.ace-doku-dark .ace_quiz,
+.ace-doku-dark .ace_noprint,
+.ace-doku-dark .ace_noweb,
+.ace-doku-dark .ace_directive {
+    color: #8f8;
+}
