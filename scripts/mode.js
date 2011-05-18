@@ -21,7 +21,7 @@ define(function(require) {
         var that = {};
 
         var tokenizer_rules = [];
-        var containers = ["start", "table"];
+        var containers = ["start", "table", "directive"];
         var indent_regex = new RegExp("^(?:" + ([
             "(?: {2,}|\t{1,})[\\*\\-][ \t]*", // listblock
             "(?:  |\t)(?=.)", // preformatted
@@ -71,6 +71,9 @@ define(function(require) {
                 for (name in latex_modes) {
                     modes[name] = latex_modes[name];
                 }
+            }
+            for (name in ioc_modes) {
+                modes[name] = ioc_modes[name];
             }
             for (name in modes) {
                 names.push(name);
@@ -311,6 +314,40 @@ define(function(require) {
                 entry: "\\\\begin\\{eqnarray\\*\\}",
                 exit: "\\\\end\\{eqnarray\\*\\}",
                 pattern: "."
+            }
+        };
+
+        var ioc_modes = {
+            "quiz": {
+                sort: 5,
+                entry: "<quiz.*?>",
+                exit: "</quiz>",
+                modes: ["listblock"]
+            },
+            "iocstl": {
+                sort: 15,
+                entry: "<iocstl.*?>",
+                exit: "</iocstl>",
+                modes: [].concat(container_modes, formatting_modes)
+            },
+            "noprint": {
+                sort: 16,
+                entry: "<noprint>",
+                exit: "</noprint>",
+                modes: [].concat(container_modes, formatting_modes)
+            },
+            "noweb": {
+                sort: 17,
+                entry: "<noweb>",
+                exit: "</noweb>",
+                modes: [].concat(container_modes, formatting_modes)
+            },
+            "directive": {
+                sort: 500,
+                entry: "^::[a-zA-Z0-9_-]+:",
+                exit: "^:::$",
+                pattern:  "^  :[a-zA-Z0-9_-]+:",
+                modes: [].concat(container_modes, formatting_modes)
             }
         };
 
