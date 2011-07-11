@@ -1,9 +1,9 @@
 <?php
 
-$lang['colortheme'] = "Öâåòîâàÿ òåìà";
-$lang['colortheme_o_dark'] = "Ò¸ìíàÿ";
-$lang['colortheme_o_light'] = "Ñâåòëàÿ";
-$lang['highlight'] = 'Ðàçðåøèòü ïîäñâåòêó ñèíòàêñèñà';
-$lang['latex'] = 'Ðàçðåøèòü ïîääåðæêó ïëàãèíà LaTeX';
-$lang['wraplimit'] = 'Ãðàíèöà òåêñòà ïî øèðèíå';
-$lang['loadjquery'] = 'Çàãðóæàòü áèáëèîòåêó jQuery';
+$lang['colortheme'] = "Ð¦Ð²ÐµÑ‚Ð¾Ð²Ð°Ñ Ñ‚ÐµÐ¼Ð°";
+$lang['colortheme_o_dark'] = "Ð¢Ñ‘Ð¼Ð½Ð°Ñ";
+$lang['colortheme_o_light'] = "Ð¡Ð²ÐµÑ‚Ð»Ð°Ñ";
+$lang['highlight'] = 'Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð¿Ð¾Ð´ÑÐ²ÐµÑ‚ÐºÑƒ ÑÐ¸Ð½Ñ‚Ð°ÐºÑÐ¸ÑÐ°';
+$lang['latex'] = 'Ð Ð°Ð·Ñ€ÐµÑˆÐ¸Ñ‚ÑŒ Ð¿Ð¾Ð´Ð´ÐµÑ€Ð¶ÐºÑƒ Ð¿Ð»Ð°Ð³Ð¸Ð½Ð° LaTeX';
+$lang['wraplimit'] = 'Ð“Ñ€Ð°Ð½Ð¸Ñ†Ð° Ñ‚ÐµÐºÑÑ‚Ð° Ð¿Ð¾ ÑˆÐ¸Ñ€Ð¸Ð½Ðµ';
+$lang['loadjquery'] = 'Ð—Ð°Ð³Ñ€ÑƒÐ¶Ð°Ñ‚ÑŒ Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÑƒ jQuery';
